@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="stylesheet" href="./css/media_query.css">
+</head>
+<body>
+
+    <div class="grid-container" id="grid">
+        <input class="outputscreen" type="text" id="outputscreen" placeholder="0"></input>
+        <button class="btn" id="btn1" onclick="display(1);num1()">1</button>
+        <button class="btn" id="btn2" onclick="display(2);num2()">2</button>
+        <button class="btn" id="btn3" onclick="display(3),num3()">3</button>
+        <button class="btn" id="btn4" onclick="display(4),num4()">4</button>
+        <button class="btn" id="btn5" onclick="display(5),num5()">5</button>
+        <button class="btn" id="btn6" onclick="display(6),num6()">6</button>
+        <button class="btn" id="btn7" onclick="display(7),num7()">7</button>
+        <button class="btn" id="btn8" onclick="display(8),num8()">8</button>
+        <button class="btn" id="btn9" onclick="display(9),num9()">9</button>
+        <button class="btn" id="btn10" onclick="display(0),num0()">0</button>
+        <button class="btn" id="btn11" onclick="display('00'),num00()">00</button>
+
+        <button class="btn" id="btn12" onclick="display('.'),numDot()">.</button>
+        <button class="btn" id="btn13" onclick="del()">DEL</button>
+
+        <button class="btn" id="btn14" onclick="display('+'),numPlus()">+</button>
+        <button class="btn" id="btn15" onclick="display('-'),numMinus()">-</button>
+        <button class="btn" id="btn16" onclick="display('*'),numMulti()">*</button>
+        <button class="btn" id="btn17" onclick="display('/'),numDiv()">/</button>
+        <button class="btn" id="btn18" onclick="display('%'),numMod()">%</button>
+
+        <button class="btn" id="btn19" onclick="Clear()">C</button>
+        <button class="btn" id="btn20" onclick="calculate()">=</button>
+    </div>
+
+    <div class="js-buttons">
+        <button onclick="changeNewTheme()">New Theme</button>
+        <button onclick="changeOldTheme()">Old Theme</button>
+        <button onclick="changeIndiaFlagTheme()">Indian Flag Theme</button>
+    </div>
+
+    <audio src="./audios/one.mp3" id="one"></audio>
+    <audio src="./audios/two.mp3" id="two"></audio>
+    <audio src="./audios/three.mp3" id="three"></audio>
+    <audio src="./audios/four.mp3" id="four"></audio>
+    <audio src="./audios/five.mp3" id="five"></audio>
+    <audio src="./audios/six.mp3" id="six"></audio>
+    <audio src="./audios/seven.mp3" id="seven"></audio>
+    <audio src="./audios/eight.mp3" id="eight"></audio>
+    <audio src="./audios/nine.mp3" id="nine"></audio>
+    <audio src="./audios/zero.mp3" id="zero"></audio>
+    <audio src="./audios/doublezero.mp3" id="doublezero"></audio>
+
+    <audio src="./audios/dot.mp3" id="dot"></audio>
+    <audio src="./audios/delete.mp3" id="delete"></audio>
+
+    <audio src="./audios/plus.mp3" id="plus"></audio>
+    <audio src="./audios/minus.mp3" id="minus"></audio>
+    <audio src="./audios/multiplication.mp3" id="multi"></audio>
+    <audio src="./audios/division.mp3" id="div"></audio>
+    <audio src="./audios/modulus.mp3" id="mod"></audio>
+
+    <audio src="./audios/clear.mp3" id="clear"></audio>
+    <audio src="./audios/total.mp3" id="total"></audio>
+
+
+<script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+@media(max-width: 992px){
+    .grid-container{
+        transform: scale(.8);
+    }
+    
+    .js-buttons{
+        flex-direction: column;
+    }
+
+    .js-buttons button{
+        margin: 0 0 20px 0;
+    }
+}
+@media(max-width: 786px){
+
+    body{
+        flex-direction: column;
+    }
+    .grid-container{
+        transform: scale(.7);
+        margin-top: -46px;
+    }
+
+    .js-buttons{
+        flex-direction: row;
+    }
+
+    .js-buttons button{
+        margin: 0px 8px 0px 25px;
+    }
+}
+
+@media(max-width: 480px){
+    .grid-container{
+        transform: scale(.5);  
+    }
+
+    .js-buttons{
+        flex-direction: row;
+        position: absolute;
+        bottom: 23px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .js-buttons button{
+        margin: 10px;
+    }
+}
+
+@media(max-width: 320px){
+    .grid-container{
+        transform: scale(.4);
+        margin-bottom: 110px;
+    }
+    .js-buttons{
+        bottom: 40px;
+    }
+}
+
+@media(max-width: 230px){
+    .grid-container{
+        transform: scale(.3);
+    }
+    .js-buttons{
+        flex-direction: column;
+    }
+    .js-buttons button {
+        font-size: 11px;
+        padding: 8px;
+    }
+}
