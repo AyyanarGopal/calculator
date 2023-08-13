@@ -17,7 +17,7 @@ body {
     border-radius: 21px;
     box-shadow: inset 2px 0px 13px 17px #181717;
     background: linear-gradient(340deg, #222122, #00f8f8);
-    animation: saro 5s;
+    animation: calrotate 5s;
 }
 
 .grid-container .outputscreen {
@@ -85,7 +85,7 @@ body {
     box-shadow: 5px 4px 5px 0px black, inset -2px -1px 4px 0px black;
     cursor: pointer;
     font-weight: bold;
-    animation: saro2 5s;
+    animation: btnrotate 5s;
 }
 
 .js-buttons button:hover {
@@ -101,9 +101,9 @@ body {
 
 /* animations */
 
-  @keyframes saro {
+  @keyframes calrotate {
     0% {
-        transform: rotateX(94deg) translateX(-489px) rotate(360deg);
+        transform: rotateX(94deg) translateX(-489px) rotate(360deg);   
     }
 
     50% {
@@ -115,7 +115,7 @@ body {
     }
 }
 
-@keyframes saro2 {
+@keyframes btnrotate {
   0% {
         transform: rotateY(94deg) translateY(-489px) rotate(360deg);
     }
