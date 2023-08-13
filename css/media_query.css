@@ -1,6 +1,7 @@
 @media(max-width: 992px){
     .grid-container{
         transform: scale(.8);
+        animation: none;
     }
     
     .js-buttons{
@@ -9,6 +10,7 @@
 
     .js-buttons button{
         margin: 0 0 20px 0;
+        animation: none;
     }
 }
 @media(max-width: 786px){
